@@ -41,33 +41,25 @@ export default function Page() {
         <>
             <Title title={'Sirion Srl - Sostenibilità'} />
 
-            <div className="md:flex bg-customWhite p-20">
-                <div className=" w-[100%] md:w-[50%] flex justify-center" >
-                 
-                <Swiper
-                        spaceBetween={20}
-                        modules={[Pagination]}
-                        style={{width: '40%'}}
-                        
-                        pagination={{ clickable: true }}
-                        slidesPerView={1} // Numero di slide visibili contemporaneamente
-                        centeredSlides={true} // Centra le slide attive
-                        navigation={true} // Abilita la navigazione
-                        >
-                            <SwiperSlide>
-                                <Image src={TechImg1} alt='techImage' width={300} height={100}></Image>
-                            </SwiperSlide>
-                        </Swiper>
-                  
-              
+
+            <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
+                    <Image src={TechImg1} alt='techImage' width={500} height={300}></Image>
                 </div>
-                <div className=" w-[100%] md:w-[50%] flex flex-col">
-                
-                    <h1 className="text-customBlack text-xl text-left font-extrabold"  style={{marginTop:"30px"}}>CO2 Carbon footprint compensation</h1>
-                    <p className="text-customBlack text-left text-sm" style={{marginTop:"20px"}}>Sirion lavora sempre con un occhio alla sostenibilità e con l’aiuto della società @Upgreene è già stato emesso il primo report del CALCOLO DELL’ IMPRONTA DI CARBONIO CFP DI ORGANIZZAZIONE  con lo scopo di calcolare l’impronta emissiva di organizzazione di Sirion srl e quindi di quantificare l’impatto sul cambiamento climatico delle singole azioni riconducibili alle attività della sede.
-Il totale delle emissioni di CO2 calcolate sarà interamente compensato da UpGreene ,consentendo a Sirion di intraprendere un percorso verso la neutralità climatica.</p>
-<h1 className="text-customBlack text-xl text-left font-extrabold"  style={{marginTop:"30px"}}>Pannelli Solari</h1>
-                    <p className="text-customBlack text-left text-sm" style={{marginTop:"20px"}}>L’obiettivo di Sirion srl è quello di crescere anche dal punto dell’ecosostenibilità, a tal punto Sirion è già al lavoro con un progetto pluriennale che permetterà entro la fine del 2026 di autoprodurre energia dai pannelli fotovoltaici per coprire fino al 75% del fabbisogno, questo mediante anche impianti elettrici di ultima generazione</p>
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
+                    <h4 className="mb-4 text-customBlack text-3xl font-medium">CO2 Carbon footprint compensation</h4>
+                    <p className="mb-4 text-customBlack">Sirion lavora sempre con un occhio alla sostenibilità e con l’aiuto della società @Upgreene è già stato emesso il primo report del CALCOLO DELL’ IMPRONTA DI CARBONIO CFP DI ORGANIZZAZIONE  con lo scopo di calcolare l’impronta emissiva di organizzazione di Sirion srl e quindi di quantificare l’impatto sul cambiamento climatico delle singole azioni riconducibili alle attività della sede.
+                        Il totale delle emissioni di CO2 calcolate sarà interamente compensato da UpGreene ,consentendo a Sirion di intraprendere un percorso verso la neutralità climatica.</p>
+                    
+                </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last flex items-center justify-center">
+                    <Image src={TechImg1} alt='techImage' width={500} height={300}></Image>
+                </div>
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
+                    <h4 className="mb-4 text-customBlack text-3xl font-medium">Pannelli Solari</h4>
+                    <p className="mb-4 text-customBlack">L’obiettivo di Sirion srl è quello di crescere anche dal punto dell’ecosostenibilità, a tal punto Sirion è già al lavoro con un progetto pluriennale che permetterà entro la fine del 2026 di autoprodurre energia dai pannelli fotovoltaici per coprire fino al 75% del fabbisogno, questo mediante anche impianti elettrici di ultima generazione</p>
                 </div>
             </div>
             <EndPage></EndPage>

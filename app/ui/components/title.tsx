@@ -1,9 +1,9 @@
 import React from "react";
-import imageUrl from "./../../../img/default/business.png"
+import imageUrl from "./../../../img/default/sirion_srl_cover.jpeg"
 import Image from "next/image";
 const Title = (props: any) => {
   return (
-    <div className="relative w-full h-[20rem] flex items-center justify-center">
+    <div className={`relative w-full flex items-center justify-center ${props.description ? 'h-[30rem]' : 'h-[20rem]'}`}>
     {/* Immagine */}
     <Image
         src={imageUrl}
@@ -14,11 +14,16 @@ const Title = (props: any) => {
     />
     
     {/* Overlay scuro */}
-    <div className="absolute inset-0 bg-black opacity-40 bg-customBlack"></div>
+    <div className="absolute inset-0 bg-black opacity-50 bg-customBlack"></div>
     
     <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center w-[70rem]">
             <h1 className="text-5xl font-extrabold text-white">{props.title}</h1>
+            {props.description &&
+              <div className="w-100 flex-col flex items-center p-10">
+                <p className="text-white justify-center text-center text-2xl">{props.description}</p>
+              </div>
+            }
         </div>
     </div>
 </div>

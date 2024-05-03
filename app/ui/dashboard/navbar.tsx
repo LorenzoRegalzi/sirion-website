@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import ArrowDownIcon from '../icon/arrow-down';
 import Image from 'next/image';
 import Logo from "./../../../img/default/sirion.png"
+import IconHamburgerMenu from '../icon/hamburger';
+import IconClose from '../icon/close';
 
 const Navbar = () => {
 
@@ -44,6 +46,7 @@ const Navbar = () => {
     }, []);
 const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
     return (
+      <>
 <nav className={`fixed top-0 w-full z-10 transition-colors duration-300 ${navbarClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -57,7 +60,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
             </Link>
           </div>
           {/* Navbar links */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex">
             <div className="ml-10 flex items-baseline space-x-4">
             
               <Link href="/" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
@@ -95,10 +98,37 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
               </div>
             </div>
           </div>
-          
+          <div className="md:hidden flex items-center">
+            <button onClick={toggleMenu} className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-3xl font-medium focus:outline-none">
+              <IconHamburgerMenu></IconHamburgerMenu>
+            </button>
+          </div>
+         
         </div>
       </div>
+     
+        
+      
     </nav>
+    {
+      isOpen &&  <div className="fixed top-0 left-0 w-full h-full bg-customBlue z-50" onClick={toggleMenu}>
+        <button onClick={toggleMenu} className="absolute top-4 left-4 text-white hover:text-gray-300 focus:outline-none text-3xl">
+            <IconClose></IconClose>
+          </button>
+          {/* Navbar links al centro orizzontalmente */}
+          <div className="flex flex-col items-center justify-evenly flex-grow h-full">
+              <Link href="/" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Home</Link>
+              <Link href="/know-how" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Know-How</Link>
+              <Link href="/products" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">I nostri prodotti</Link>
+              <Link href="/technology" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Tecnologia</Link>
+              <Link href="/sostenibility" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
+              <Link href="/contact" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Dove siamo</Link>
+              <Link href="/job-opportunity" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Job Opportunity</Link>
+          </div>
+      </div>
+    }
+   
+    </>
   );
 };
 
