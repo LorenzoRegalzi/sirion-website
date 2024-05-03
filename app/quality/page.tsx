@@ -32,14 +32,14 @@ export default function Page() {
                         </div>
                         <div className=" w-[50%] flex justify-end">
                             <div className="flex">
-                                <img src="https://www.deltats.eu/wp-content/uploads/2021/06/loghi-nuovi-dnv150.jpg" alt="" />
+                                {/* <img src="https://www.deltats.eu/wp-content/uploads/2021/06/loghi-nuovi-dnv150.jpg" alt="" /> */}
                             </div>
                         </div>
                     </div>
                     
                 </div>
                 <div className=" w-[100%] md:w-[50%] flex justify-center" >
-                    <img  src="https://www.deltats.eu/wp-content/uploads/2019/05/qualita.jpg"/>
+                    {/* <img  src="https://www.deltats.eu/wp-content/uploads/2019/05/qualita.jpg"/> */}
                 </div>
             </div>
            
