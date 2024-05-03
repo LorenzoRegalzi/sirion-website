@@ -1,8 +1,6 @@
 "use client"
 import { useRef } from "react";
 import Button from "../ui/components/button";
-import ArrowDownIcon from "../ui/icon/arrow-down";
-import Icofont from 'react-icofont';
 import Title from "../ui/components/title";
 
 export default function Page() {
