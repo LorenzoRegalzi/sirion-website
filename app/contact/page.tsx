@@ -16,7 +16,7 @@ export default function Page() {
 
     const handleSubmit = async () => {
      
-        if (checkboxRef.current && checkboxRef.current.checked) {
+        if (checkboxRef.current) {
             const formData = {
                 name: inputNameRef.current.value,
                 email: inputEmailRef.current.value,
@@ -52,19 +52,19 @@ export default function Page() {
         <>
             <Title title={'Sirion Srl - Contatti'} />
             <div className="md:flex bg-customWhite p-12">
-                <div className="w-full md:w-3/4 flex flex-col justify-center items-center border-2 border-gray-200 p-12">
+                <div className="w-full md:w-3/4 flex flex-col justify-center items-center p-12"  style={{border: '2px solid #E5E7EB'}}>
                     <h3 className="text-customBlack font-extrabold text-center text-3xl mb-4">Richiesta informazioni</h3>
                     <p className="text-customBlack text-center mb-4">Per ricevere ulteriori informazioni utilizzate la form qui sotto.</p>
                     <p className="text-customBlack text-center mb-4">Tutti i campi sono obbligatori.</p>
                     <div className="w-full flex flex-col md:flex-row justify-between mb-4">
-                        <input type="text" className="w-full md:w-48 border-2 px-4 py-2 mb-2 md:mb-0 border-gray-300" ref={inputNameRef} placeholder="Nome*" />
-                        <input type="text" className="w-full md:w-48 border-2  px-4 py-2 mb-2 md:mb-0 border-gray-300" ref={inputSurnameRef} placeholder="Cognome*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"    style={{border: '2px solid #E5E7EB'}}ref={inputNameRef} placeholder="Nome*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0 border-gray-300"  style={{border: '2px solid #E5E7EB'}} ref={inputSurnameRef} placeholder="Cognome*" />
                     </div>
                     <div className="w-full flex flex-col md:flex-row justify-between mb-4">
-                        <input type="text" className="w-full md:w-48 border-2 border-gray-200 px-4 py-2 mb-2 md:mb-0" ref={inputEmailRef} placeholder="Email*" />
-                        <input type="text" className="w-full md:w-48 border-2 border-gray-200 px-4 py-2 mb-2 md:mb-0" ref={inputBusinessRef} placeholder="Azienda*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB'}} ref={inputEmailRef} placeholder="Email*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB'}} ref={inputBusinessRef} placeholder="Azienda*" />
                     </div>
-                    <input type="text" className="w-full border-2 border-gray-200 px-4 py-2 mb-4" ref={inputMessageRef} placeholder="Messaggio*" style={{ height: '100px' }} />
+                    <input type="text" className="w-full px-4 py-2 mb-4"  style={{border: '2px solid #E5E7EB', height: '100px' }} ref={inputMessageRef} placeholder="Messaggio*" />
                     <div className="w-full flex items-center mb-4">
                         <input type="checkbox" ref={checkboxRef} className="mr-2" />
                         <p className="text-customBlack">acconsento al trattamento dei dati personali*</p>
