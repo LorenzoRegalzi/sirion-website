@@ -4,6 +4,8 @@ import Title from "../ui/components/title";
 import Image from "next/image";
 import know1 from "../../img/know-how/know-how-1-300x225.jpg";
 import EndPage from "../ui/components/end-page";
+import TechImg3 from './../../img/technology/image.G6J5M2.png'
+import TechImg5 from './../../img/technology/image.QCILN2.png'
 
 export default function Page() {
     return (
@@ -22,7 +24,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
             <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last flex items-center justify-center">
-            <Image src={know1} alt="Immagine Know How 3" width={500} height={300}/>
+            <Image src={TechImg3} alt="Immagine Know How 3" width={500} height={300}/>
             </div>
             <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
                 <h4 className="mb-4 text-customBlack text-3xl font-medium">Progettazione</h4>
@@ -33,7 +35,7 @@ export default function Page() {
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={know1} alt="Immagine Know How 3" width={500} height={300}/>
+                <Image src={TechImg5} alt="Immagine Know How 3" width={500} height={300}/>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Prototipazione</h4>

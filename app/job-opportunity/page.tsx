@@ -55,7 +55,7 @@ export default function Page() {
         <>
             <Title title={'Sirion Srl - Job Opportunity'} />
 
-            <div className="md:flex bg-customWhite pl-60 pr-60">
+            <div className="md:flex bg-customWhite pl-0 pr-0 lg:pl-60 lg:pr-60">
                 
                 <div className=" w-[100%] md:w-[50%] flex justify-center flex-col" style={{paddingTop: '48px', paddingRight: '30px', paddingBottom: '70px', paddingLeft: '30px'}}>
                 <p className="text-customBlack font-extrabold text-2xl pb-5">Vuoi lavorare con noi?</p>

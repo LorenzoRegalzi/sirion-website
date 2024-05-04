@@ -4,8 +4,11 @@ import Description from "./ui/components/description";
 import Image from "next/image";
 import news1 from "../img/news/news_1.png";
 import news2 from "../img/news/news_2.png";
+import news3 from "../img/news/news_3.png";
 import know1 from "../img/default/image.H0XLN2.png";
 import Head from "next/head";
+import TechImg1 from '../img/sostenibility/image.XUX8M2.png'
+import TechImg5 from '../img/technology/image.QCILN2.png'
 import Button from "./ui/components/button";
 import EndPage from "./ui/components/end-page";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -63,8 +66,8 @@ export default function Home() {
         <meta name="description" content="Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo." />
     </Head>
     <Title title={"Sirion Srl - Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10">
-    <div className="max-w-xs mx-auto bg-customWhite p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10  justify-items-start">
+    <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
             <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">01</h1>
             <div className="flex flex-col">
@@ -73,7 +76,7 @@ export default function Home() {
             </div>
         </div>
     </div>
-    <div className="max-w-xs mx-auto bg-customWhite p-4">
+    <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
             <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">02</h1>
             <div className="flex flex-col">
@@ -82,7 +85,7 @@ export default function Home() {
             </div>
         </div>
     </div>
-    <div className="max-w-xs mx-auto bg-customWhite p-4">
+    <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
             <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">03</h1>
             <div className="flex flex-col">
@@ -91,7 +94,7 @@ export default function Home() {
             </div>
         </div>
     </div>
-    <div className="max-w-xs mx-auto bg-customWhite p-4">
+    <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
             <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">04</h1>
             <div className="flex flex-col">
@@ -106,7 +109,7 @@ export default function Home() {
 
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
         <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-            <Image src={news1} alt="Immagine Know How 1"  />
+            <Image src={TechImg1} alt="Immagine Know How 1"  />
         </div>
         <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
             <h4 className="mb-4 text-customBlack text-3xl font-medium">Know How</h4>
@@ -116,7 +119,7 @@ export default function Home() {
     </div>
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last">
-        <Image src={news1} alt="Immagine Know How 1" />
+        <Image src={TechImg5} alt="Immagine Know How 1" />
     </div>
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
         <h4 className="mb-4 text-customBlack text-3xl font-medium">Prodotti</h4>
@@ -182,7 +185,9 @@ export default function Home() {
                             <SwiperSlide>
                                 <Image src={news2} alt="techImage"></Image>
                             </SwiperSlide>
-                        
+                            <SwiperSlide>
+                                <Image src={news3} alt="techImage"></Image>
+                            </SwiperSlide>
                         </Swiper>
   </div>
   <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">

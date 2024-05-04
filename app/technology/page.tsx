@@ -59,7 +59,7 @@ export default function Page() {
          
 
             <div className="flex flex-col md:flex-row items-center justify-center pb-10 pt-20 bg-customWhite">
-                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
                         <Image src={TechImg1} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
@@ -73,7 +73,7 @@ export default function Page() {
                         </ul>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
                         <Image src={TechImg5} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
@@ -84,7 +84,7 @@ export default function Page() {
                 </div>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center pt-10 pb-20 bg-customWhite">
-                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
                         <Image src={TechImg3} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
@@ -98,7 +98,7 @@ export default function Page() {
                         </ul>
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center">
+                <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
                         <Image src={TechImg5} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>

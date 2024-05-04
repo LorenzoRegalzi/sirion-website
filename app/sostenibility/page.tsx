@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Title from '../ui/components/title';
 import Image from 'next/image';
 import TechImg1 from './../../img/sostenibility/image.XUX8M2.png'
+import TechImg5 from './../../img/technology/image.QCILN2.png'
 import EndPage from '../ui/components/end-page';
 
 export default function Page() {
@@ -44,7 +45,7 @@ export default function Page() {
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                    <Image src={TechImg1} alt='techImage' width={500} height={300}></Image>
+                    <Image src={TechImg5} alt='techImage' width={500} height={300}></Image>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">CO2 Carbon footprint compensation</h4>
