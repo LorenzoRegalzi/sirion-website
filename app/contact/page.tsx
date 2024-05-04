@@ -1,5 +1,5 @@
 "use client"
-import { useRef } from "react";
+import { MutableRefObject, useRef } from "react";
 import Button from "../ui/components/button";
 import Title from "../ui/components/title";
 import Image from "next/image";
@@ -7,24 +7,25 @@ import imageUrl from "../../img/default/map.jpg"
 
 
 export default function Page() {
-    const inputNameRef = useRef(null);
-    const inputSurnameRef = useRef(null);
-    const inputBusinessRef = useRef(null);
-    const inputEmailRef = useRef(null);
-    const inputMessageRef = useRef(null);
-    const checkboxRef = useRef(null);
+    const inputNameRef = useRef<any>(null);
+    const inputSurnameRef = useRef<any>(null)
+    const inputBusinessRef = useRef<any>(null);
+    const inputEmailRef = useRef<any>(null);
+    const inputMessageRef = useRef<any>(null);
+    const checkboxRef = useRef<any>(null);
 
     const handleSubmit = async () => {
      
         if (checkboxRef.current) {
-            const formData = {
-                name: inputNameRef.current.value,
-                email: inputEmailRef.current.value,
-                message: inputMessageRef.current.value,
-                surname: inputSurnameRef.current.value,
-                business: inputBusinessRef.current.value
-            };
-
+           
+              const formData = {
+                  name: inputNameRef.current.value,
+                  email: inputEmailRef.current.value,
+                  message: inputMessageRef.current.value,
+                  surname: inputSurnameRef.current.value,
+                  business: inputBusinessRef.current.value
+              };
+            
             const requestOptions = {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
