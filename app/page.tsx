@@ -8,10 +8,10 @@ import know1 from "../img/default/image.H0XLN2.png";
 import Head from "next/head";
 import Button from "./ui/components/button";
 import EndPage from "./ui/components/end-page";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css/pagination';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -177,17 +177,17 @@ export default function Home() {
                         navigation={true} // Abilita la navigazione
                         >
                             <SwiperSlide>
-                                <Image src={news1} alt='techImage' ></Image>
+                                <Image src={news1} alt="techImage" ></Image>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Image src={news2} alt='techImage'></Image>
+                                <Image src={news2} alt="techImage"></Image>
                             </SwiperSlide>
                         
                         </Swiper>
   </div>
   <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
     <h4 className="mb-4 text-customBlack text-3xl font-medium">Recensioni dei Media</h4>
-    <p className="mb-4 text-customBlack">Siamo orgogliosi di essere stati al centro dell'attenzione dei media. Le recensioni dei giornali riflettono il nostro impegno e la nostra dedizione nel settore. Da giornalisti apprezzati a riviste di settore, le nostre iniziative hanno catturato l'interesse di tutti. Scopri cosa dicono di noi i media e perché siamo una scelta di fiducia nel mercato.</p>
+    <p className="mb-4 text-customBlack">Siamo orgogliosi di essere stati al centro dell’attenzione dei media. Le recensioni dei giornali riflettono il nostro impegno e la nostra dedizione nel settore. Da giornalisti apprezzati a riviste di settore, le nostre iniziative hanno catturato linteresse di tutti. Scopri cosa dicono di noi i media e perché siamo una scelta di fiducia nel mercato.</p>
     
   </div>
 </div>

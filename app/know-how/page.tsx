@@ -26,7 +26,7 @@ export default function Page() {
             </div>
             <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
                 <h4 className="mb-4 text-customBlack text-3xl font-medium">Progettazione</h4>
-                <p className="mb-4 text-customBlack">Sirion si distingue per la progettazione e lo sviluppo di soluzioni innovative nel campo dell'illuminazione automobilistica. Grazie al nostro dedicato ufficio tecnico e al laboratorio specializzato, siamo in grado di concepire e realizzare prodotti all'avanguardia che soddisfano le esigenze del mercato. L'approccio orientato all'innovazione e alla qualità ci consente di offrire soluzioni luminose innovative e affidabili.</p>
+                <p className="mb-4 text-customBlack">Sirion si distingue per la progettazione e lo sviluppo di soluzioni innovative nel campo dell’illuminazione automobilistica. Grazie al nostro dedicato ufficio tecnico e al laboratorio specializzato, siamo in grado di concepire e realizzare prodotti all’avanguardia che soddisfano le esigenze del mercato. L’approccio orientato all’innovazione e alla qualità ci consente di offrire soluzioni luminose innovative e affidabili.</p>
                
             </div>
             </div>
@@ -37,7 +37,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Prototipazione</h4>
-                    <p className="mb-4 text-customBlack">Il nostro reparto di stampaggio vanta una prototipazione avanzata, garantendo la massima qualità dei prodotti fin dall'inizio del processo. Grazie a tecnologie all'avanguardia e a un team altamente qualificato, siamo in grado di realizzare prototipi precisi e funzionali che soddisfano gli standard più elevati. La nostra attenzione ai dettagli e l'impegno per l'eccellenza ci consentono di offrire soluzioni di stampaggio di altissimo livello.</p>
+                    <p className="mb-4 text-customBlack">Il nostro reparto di stampaggio vanta una prototipazione avanzata, garantendo la massima qualità dei prodotti fin dall’inizio del processo. Grazie a tecnologie all’avanguardia e a un team altamente qualificato, siamo in grado di realizzare prototipi precisi e funzionali che soddisfano gli standard più elevati. La nostra attenzione ai dettagli e l’impegno per l’eccellenza ci consentono di offrire soluzioni di stampaggio di altissimo livello.</p>
                     
                 </div>
             </div>
