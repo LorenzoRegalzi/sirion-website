@@ -58,12 +58,12 @@ export default function Page() {
                     <p className="text-customBlack text-center mb-4">Per ricevere ulteriori informazioni utilizzate la form qui sotto.</p>
                     <p className="text-customBlack text-center mb-4">Tutti i campi sono obbligatori.</p>
                     <div className="w-full flex flex-col md:flex-row justify-between mb-4">
-                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"    style={{border: '2px solid #E5E7EB'}}ref={inputNameRef} placeholder="Nome*" />
-                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0 border-gray-300"  style={{border: '2px solid #E5E7EB'}} ref={inputSurnameRef} placeholder="Cognome*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"    style={{border: '2px solid #E5E7EB',width:'auto'}}ref={inputNameRef} placeholder="Nome*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0 border-gray-300"  style={{border: '2px solid #E5E7EB',width:'auto'}} ref={inputSurnameRef} placeholder="Cognome*" />
                     </div>
                     <div className="w-full flex flex-col md:flex-row justify-between mb-4">
-                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB'}} ref={inputEmailRef} placeholder="Email*" />
-                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB'}} ref={inputBusinessRef} placeholder="Azienda*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB',width:'auto'}} ref={inputEmailRef} placeholder="Email*" />
+                        <input type="text" className="w-96 px-4 py-2 mb-2 md:mb-0"  style={{border: '2px solid #E5E7EB',width:'auto'}} ref={inputBusinessRef} placeholder="Azienda*" />
                     </div>
                     <input type="text" className="w-full px-4 py-2 mb-4"  style={{border: '2px solid #E5E7EB', height: '100px' }} ref={inputMessageRef} placeholder="Messaggio*" />
                     <div className="w-full flex items-center mb-4">
