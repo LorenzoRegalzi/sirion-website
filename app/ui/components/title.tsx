@@ -3,7 +3,7 @@ import imageUrl from "./../../../img/default/sirion_srl_cover.jpeg"
 import Image from "next/image";
 const Title = (props: any) => {
   return (
-    <div className={`relative w-full flex items-center justify-center ${props.description ? 'h-[30rem]' : 'h-[20rem]'}`}>
+    <div className={`relative w-full flex items-center justify-center mt-14 ${props.description ? 'h-[30rem]' : 'h-[20rem]'}`}>
     {/* Immagine */}
     <Image
         src={imageUrl}
@@ -21,7 +21,7 @@ const Title = (props: any) => {
             <h1 className="font-extrabold text-white dark:text-white text-3xl sm:text-3xl md:text-4xl lg:text-4xl" style={{color:'white'}}>{props.title}</h1>
             {props.description &&
               <div className="w-100 flex-col flex items-center p-10">
-                <p className="text-white font-bold justify-center text-center  sm:text-lg md:text-xl lg:text-2xl">{props.description}</p>
+                <p className="text-customWhite font-bold justify-center text-center  sm:text-lg md:text-xl lg:text-2xl">{props.description}</p>
               </div>
             }
         </div>
