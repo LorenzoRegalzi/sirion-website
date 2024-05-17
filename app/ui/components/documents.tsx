@@ -21,16 +21,16 @@ const Documents = (props: any) => {
         {/* Contenitore principale */}
         <div className="absolute inset-0 flex flex-col items-center justify-center p-10">
           {/* Titolo */}
-          <h1 className="text-white text-4xl font-bold text-center mb-14">Documenti</h1>
+          <h1 className="text-customWhite text-4xl font-bold text-center mb-14">Documenti</h1>
           
           {/* Contenitore del testo */}
           <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center">
             <div className="text-center md:text-left">
                 <Link href={'/IATF-16949-2016.pdf'}>
-                    <p className="text-white mb-4 text-2xl">&#8226; IATF</p>
+                    <p className="text-customWhite mb-4 text-2xl">&#8226; IATF</p>
                 </Link>
                 <Link href={'/ISO-9001-2015-IT.pdf'}>
-                    <p className="text-white mb-4 text-2xl">&#8226; ISO9001</p>
+                    <p className="text-customWhite mb-4 text-2xl">&#8226; ISO9001</p>
                 </Link>
                 
             </div>

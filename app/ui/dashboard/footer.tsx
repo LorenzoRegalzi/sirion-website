@@ -3,7 +3,7 @@ import ArrowRightIcon from "../icon/arrow-right";
 
 const Footer = () => {
     return (
-      <footer className="bg-customBlue text-gray-300 p-20">
+      <footer className="bg-customBlue text-customWhite p-20">
         <div className="container mx-auto py-7">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="col-span-1">
@@ -17,15 +17,15 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/" className="hover:text-gray-200" style={{marginLeft: '3px'}}>Home</Link>
+                  <Link href="/" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Home</Link>
                 </li>
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/sostenibility" className="hover:text-gray-200" style={{marginLeft: '3px'}}>Sostenibilità</Link>
+                  <Link href="/sostenibility" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Sostenibilità</Link>
                 </li>
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/contact" className="hover:text-gray-200" style={{marginLeft: '3px'}}>Contatti</Link>
+                  <Link href="/contact" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Contatti</Link>
                 </li>
               </ul>
             </div>
@@ -34,15 +34,15 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/technology" className="hover:text-gray-200" style={{marginLeft: '3px'}}>Tecnologia</Link>
+                  <Link href="/technology" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Tecnologia</Link>
                 </li>
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/know-how" className="hover:text-gray-200" style={{marginLeft: '3px'}}>Know-How</Link>
+                  <Link href="/know-how" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Know-How</Link>
                 </li>
                 <li className="flex items-center">
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
-                  <Link href="/products" className="hover:text-gray-200" style={{marginLeft: '3px'}}>I nostri prodotti</Link>
+                  <Link href="/products" className="hover:text-customWhite" style={{marginLeft: '3px'}}>I nostri prodotti</Link>
                 </li>
               </ul>
             </div>

@@ -110,7 +110,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
             </div>
           </div>
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-3xl font-medium focus:outline-none">
+            <button onClick={toggleMenu} className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-3xl font-medium focus:outline-none">
               <IconHamburgerMenu></IconHamburgerMenu>
             </button>
           </div>
@@ -123,18 +123,19 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
     </nav>
     {
       isOpen &&  <div className="fixed top-0 left-0 w-full h-full bg-customBlue z-50" onClick={toggleMenu}>
-        <button onClick={toggleMenu} className="absolute top-4 left-4 text-white hover:text-gray-300 focus:outline-none text-3xl">
+        <button onClick={toggleMenu} className="absolute top-4 left-4 text-customWhite hover:text-gray-300 focus:outline-none text-3xl">
             <IconClose></IconClose>
           </button>
           {/* Navbar links al centro orizzontalmente */}
           <div className="flex flex-col items-center justify-evenly flex-grow h-full">
-              <Link href="/" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Home</Link>
-              <Link href="/know-how" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Know-How</Link>
-              <Link href="/products" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">I nostri prodotti</Link>
-              <Link href="/technology" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Tecnologia</Link>
-              <Link href="/sostenibility" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
-              <Link href="/contact" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Dove siamo</Link>
-              <Link href="/job-opportunity" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Job Opportunity</Link>
+              <Link href="/" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Home</Link>
+              <Link href="/company" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Azienda</Link>
+              <Link href="/know-how" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Know-How</Link>
+              <Link href="/products" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">I nostri prodotti</Link>
+              <Link href="/technology" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Tecnologia</Link>
+              <Link href="/sostenibility" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
+              <Link href="/contact" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Dove siamo</Link>
+              <Link href="/job-opportunity" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Job Opportunity</Link>
           </div>
       </div>
     }
