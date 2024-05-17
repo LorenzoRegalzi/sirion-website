@@ -18,7 +18,7 @@ const Title = (props: any) => {
     
     <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center w-[70rem]">
-            <h1 className="font-extrabold text-white text-3xl sm:text-3xl md:text-4xl lg:text-4xl">{props.title}</h1>
+            <h1 className="font-extrabold text-white dark:text-white text-3xl sm:text-3xl md:text-4xl lg:text-4xl">{props.title}</h1>
             {props.description &&
               <div className="w-100 flex-col flex items-center p-10">
                 <p className="text-white font-bold justify-center text-center  sm:text-lg md:text-xl lg:text-2xl">{props.description}</p>
