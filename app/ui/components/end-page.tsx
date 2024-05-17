@@ -24,10 +24,10 @@ const EndPage = (props: any) => {
         {/* Contenitore del testo */}
         <div className="w-full md:w-[70%] flex flex-col md:flex-row items-start md:items-center justify-between">
           <div>
-            <h1 className="text-5xl text-left font-extrabold mb-4 md:mb-0">
+            <h1 className="text-5xl text-customWhite  text-left font-extrabold mb-4 md:mb-0">
               Ricerca e Innovazione
             </h1>
-            <p className="text-left ">
+            <p className="text-left text-customWhite ">
               Scopri come Sirion si impegna nella ricerca continua per innovare
               e soddisfare le esigenze dei clienti nel settore automobilistico.
             </p>
