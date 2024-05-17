@@ -19,7 +19,8 @@ const config: Config = {
       customDarkGrey2: '#F6F7F8',
       customDarkGrey3:'#f1f1f5',
       customDarkGrey4:'#fbfbfb',
-      textGrey:'#9c9ea2'
+      textGrey:'#9c9ea2',
+      customOrange:'#F5742E'
     },
     extend: {
       backgroundImage: {

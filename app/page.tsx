@@ -14,6 +14,7 @@ import EndPage from "./ui/components/end-page";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css/pagination";
+import 'swiper/css/navigation';
 import "swiper/css";
 import { useEffect, useState } from "react";
 
@@ -23,8 +24,8 @@ export default function Home() {
     const [count2, setCount2] = useState(0);
     const [count3, setCount3] = useState(0);
     const [count4, setCount4] = useState(0);
-    const finalCount1 = 7000;
-    const finalCount2 = 30000;
+    const finalCount1 = 18000;
+    const finalCount2 = 36000;
     const finalCount3 = 80;
     const finalCount4 = 800;
     const duration = 3000; // Durata in millisecondi
@@ -69,36 +70,35 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10  justify-items-start">
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
-            <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">01</h1>
+            
             <div className="flex flex-col">
-                <h1 className="text-customBlack text-5xl text-left font-medium">{count1}</h1>
+                <h1 className="text-customOrange text-5xl text-left font-medium">{count1}</h1>
                 <h3 className="text-customBlack text-left font-medium mt-2">mq di struttura coperta</h3>
             </div>
         </div>
     </div>
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
-            <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">02</h1>
+            
             <div className="flex flex-col">
-                <h1 className="text-customBlack text-5xl text-left font-medium">{count2}</h1>
+                <h1 className="text-customOrange text-5xl text-left font-medium">{count2}</h1>
                 <h3 className="text-customBlack text-left font-medium mt-2">mq di struttura totale</h3>
             </div>
         </div>
     </div>
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
-            <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">03</h1>
+            
             <div className="flex flex-col">
-                <h1 className="text-customBlack text-5xl text-left font-medium">{count3}</h1>
+                <h1 className="text-customOrange text-5xl text-left font-medium">{count3}</h1>
                 <h3 className="text-customBlack text-left font-medium mt-2">persone nel team</h3>
             </div>
         </div>
     </div>
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
-            <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">04</h1>
             <div className="flex flex-col">
-                <h1 className="text-customBlack text-5xl text-left font-medium"> {count4}</h1>
+                <h1 className="text-customOrange text-5xl text-left font-medium"> {count4}</h1>
                 <h3 className="text-customBlack text-left font-medium mt-2">tonnellaggio massimo presse</h3>
             </div>
         </div>
@@ -129,7 +129,7 @@ export default function Home() {
     </div>
 
 
-    <div className="md:flex bg-customWhite">
+    {/* <div className="md:flex bg-customWhite">
         <div className="w-full md:w-1/3 p-20 bg-customDarkGrey2">
             <h1 className="text-customBlack text-5xl text-left font-extrabold">Storia</h1>
             <p className="text-customBlack text-left mt-4">Sirion Srl, fondata il 01/09/2023 dopo l’acquisizione tramite il bando del MISE dell’ex Blutec, è oggi un attore chiave nel settore automobilistico. Specializzata nella progettazione, stampaggio e assemblaggio di materie plastiche per il mercato dell’Automotive, con particolare attenzione al settore Lighting (interni ed esterni), Sirion Srl rappresenta una realtà produttiva strategica per i principali player del settore. La società è interamente di proprietà della capogruppo DeltAts Srl, con sede a Loranzè (TO).</p>
@@ -141,7 +141,7 @@ export default function Home() {
             <h1 className="text-customBlack text-5xl text-left font-extrabold">Missione</h1>
             <p className="text-customBlack text-left mt-4">Sirion si impegna per il successo economico attraverso il miglioramento continuo dei processi e l’utilizzo efficiente delle risorse interne, con il cliente al centro di ogni attività. Con un’attenzione particolare alla soddisfazione del cliente e dei dipendenti, Sirion promuove un ambiente di lavoro sano e rispettoso basato sulla fiducia e sull’innovazione. La qualità, la competitività dei costi e la sostenibilità ambientale guidano il nostro successo, con un’impegno costante per la sicurezza sul posto di lavoro.</p>
         </div>
-    </div>
+    </div> */}
 
     {/* <div className="md:flex bg-customWhite p-20">
         <div className="w-full md:w-1/3 bg-customWhite">
@@ -171,14 +171,20 @@ export default function Home() {
   <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last bg-customDarkGrey2 p-3 ">
   <Swiper
                         spaceBetween={20}
-                        modules={[Pagination]}
+                        modules={[Navigation]}
                       
-                        
-                        pagination={{ clickable: true }}
                         slidesPerView={1} // Numero di slide visibili contemporaneamente
                         centeredSlides={true} // Centra le slide attive
                         navigation={true} // Abilita la navigazione
+                       
                         >
+                            <SwiperSlide >
+                                <video width="600" controls>
+                                    <source src="/news.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </SwiperSlide>
+
                             <SwiperSlide>
                                 <Image src={news1} alt="techImage" ></Image>
                             </SwiperSlide>

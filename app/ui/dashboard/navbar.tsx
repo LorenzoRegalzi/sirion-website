@@ -47,7 +47,7 @@ const Navbar = () => {
 const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
     return (
       <>
-<nav className={`fixed top-0 w-full z-10 transition-colors duration-300 ${navbarClass}`}>
+<nav className={`fixed top-0 w-full z-10 transition-colors duration-300 bg-customLightGrey`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
@@ -62,10 +62,21 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
           {/* Navbar links */}
           <div className="hidden md:flex">
             <div className="ml-10 flex items-baseline space-x-4">
-            
-              <Link href="/" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+              <div className="relative" onMouseEnter={toggleMenuProd} onMouseLeave={toggleMenuProd}>
+                <button className="text-customBlack hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
+                  Home
+                  <ArrowDownIcon />
+                </button>
+                {isOpenProd && (
+                  <div className="bg-customWhite absolute z-10 left-0 w-40 bg-white divide-y divide-gray-100  shadow-lg">
+                    <Link href="/" className="text-customBlack block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Intro</Link>
+                    <Link href="/company"  className="text-customBlack block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Azienda</Link>
+                  </div>
+                )}
+              </div>
+             
               <div className="relative" onMouseEnter={toggleMenuKH} onMouseLeave={toggleMenuKH}>
-                <button className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
+                <button className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
                   Prodotti
                   <ArrowDownIcon />
                 </button>
@@ -77,14 +88,14 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
                 )}
               </div>
               
-              <Link href="/technology" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Tecnologia</Link>
+              <Link href="/technology" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Tecnologia</Link>
               
              
-              <Link href="/sostenibility" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sostenibilità</Link>
+              <Link href="/sostenibility" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sostenibilità</Link>
             
 
               <div className="relative" onMouseEnter={toggleMenuContact} onMouseLeave={toggleMenuContact}>
-                <button className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
+                <button className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
                 
                   Contatti
                   <ArrowDownIcon />

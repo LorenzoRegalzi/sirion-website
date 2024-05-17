@@ -52,3 +52,13 @@ body {
   transform: skewY(-5deg); /* Angolo di inclinazione */
   transform-origin: bottom left;
 }
+
+.swiper-button-next::after {
+  color: #F5742E;
+  font-weight: 600;
+}
+
+.swiper-button-prev::after {
+  color: #F5742E;
+  font-weight: 600;
+}
