@@ -1,11 +1,9 @@
 "use client"
 import Title from "../ui/components/title";
 import Image from "next/image";
-import know1 from "../../img/know-how/know-how-1-300x225.jpg";
-import mission from "../../img/default/image.H0XLN2.png";
+import company1 from "../../img/company/logo sirion.jpg";
+import company2 from "../../img/company/facciata new.jpeg";
 import Documents from "../ui/components/documents";
-import { useRouter,  } from "next/navigation";
-import { useEffect } from "react";
 
 export default function Page() {
 
@@ -17,7 +15,7 @@ export default function Page() {
           <Title title={"Sirion Srl - Azienda"} ></Title>
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={know1} alt="Immagine Know How 3" width={500} height={400}/>
+                <Image src={company1} alt="Immagine Know How 3" width={500} height={400}/>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Storia</h4>
@@ -26,7 +24,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={mission} alt="Immagine Know How 3" objectFit="cover"  height={600}/>
+                <Image src={company2} alt="Immagine Know How 3" objectFit="cover"  height={600}/>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Mission</h4>

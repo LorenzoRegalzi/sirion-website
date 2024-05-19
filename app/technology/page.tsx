@@ -4,52 +4,24 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
-import { useState } from 'react';
 import Title from '../ui/components/title';
 import Image from 'next/image';
-import TechImg1 from './../../img/technology/image.55D8M2.png'
-import TechImg3 from './../../img/technology/image.G6J5M2.png'
-import TechImg5 from './../../img/technology/image.QCILN2.png'
+import TechImg1 from './../../img/technology/Calibro FP.jpeg'
+import TechImg2 from './../../img/technology/arzuffi.jpeg'
+import TechImg3 from './../../img/technology/engel 800t.jpeg'
+import TechImg4 from './../../img/technology/galileo.jpeg'
+import TechImg5 from './../../img/technology/image.GUNGN2.png'
+import TechImg6 from './../../img/technology/image.QCILN2.png'
+import TechImg7 from './../../img/technology/image.ZO71M2.png'
+import TechImg8 from './../../img/technology/lab new 1.jpeg'
+import TechImg9 from './../../img/technology/lab new.jpeg'
+import TechImg10 from './../../img/technology/posaggio saldatura fp.jpeg'
+import TechImg11 from './../../img/technology/presse sirion.jpeg'
+import TechImg12 from './../../img/technology/test acqua.jpeg'
+
 import EndPage from '../ui/components/end-page';
-import ArrowDownIcon from '../ui/icon/arrow-down';
 
 export default function Page() {
-    const [showRobot, setShowRobot] = useState(true)
-    const [showLine, setShowLine] = useState(false)
-    const [showIsland, setShowIsland] = useState(false)
-    const [showLaboratory, setShowLaboratory] = useState(false)
-
-    const openTab = (title: any) => {
-        switch (title) {
-            case 'Robot':
-                setShowLine(false);
-                setShowIsland(false);
-                setShowRobot(true);
-                setShowLaboratory(false);
-                break;
-            case 'Linee':
-                setShowRobot(false);
-                setShowIsland(false);
-                setShowLine(true);
-                setShowLaboratory(false);
-                break;
-            case 'Isole':
-                setShowRobot(false);
-                setShowLine(false);
-                setShowIsland(true);
-                setShowLaboratory(false);
-                break;
-            case 'Laboratory':
-                setShowRobot(false);
-                setShowLine(false);
-                setShowIsland(false);
-
-                setShowLaboratory(true);
-                break;
-            default:
-                break;
-        }
-    }
 
     return (
         <>
@@ -61,7 +33,7 @@ export default function Page() {
             <div className="flex flex-col md:flex-row items-center justify-center pb-10 pt-20 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
-                        <Image src={TechImg1} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
+                        <Image src={TechImg3} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
                     <div className="bg-customBlueRgb p-6" style={{height:'300px'}}>
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Alluminatura</h4>
@@ -75,7 +47,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
-                        <Image src={TechImg5} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
+                        <Image src={TechImg2} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
                     <div className="p-6"  style={{height:'300px', background:'#acacac'}}>
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Presse ad iniezione</h4>
@@ -86,7 +58,7 @@ export default function Page() {
             <div className="flex flex-col md:flex-row items-center justify-center pt-10 pb-20 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
-                        <Image src={TechImg3} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
+                        <Image src={TechImg10} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
                     <div className=" p-6" style={{height:'300px', background:'#acacac'}}>
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Saldatrici</h4>
@@ -100,7 +72,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex-col items-center justify-center p-5 md:p-0">
                     <div className="relative w-full h-96">
-                        <Image src={TechImg5} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
+                        <Image src={TechImg8} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
                     </div>
                     <div className="bg-customBlueRgb p-6" style={{height:'300px'}}>
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Laboratorio</h4>

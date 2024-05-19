@@ -1,14 +1,12 @@
 "use client"
 import Title from "./ui/components/title";
-import Description from "./ui/components/description";
 import Image from "next/image";
 import news1 from "../img/news/news_1.png";
 import news2 from "../img/news/news_2.png";
 import news3 from "../img/news/news_3.png";
-import know1 from "../img/default/image.H0XLN2.png";
 import Head from "next/head";
-import TechImg1 from '../img/sostenibility/image.XUX8M2.png'
-import TechImg5 from '../img/technology/image.QCILN2.png'
+import TechImg5 from '../img/products/E84 BMW.jpeg';
+import TechImg1 from '../img/product/Tyco 1.jpeg';
 import Button from "./ui/components/button";
 import EndPage from "./ui/components/end-page";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -118,7 +116,7 @@ export default function Home() {
         </div>
     </div>
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
-    <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last">
+    <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last flex items-center justify-center">
         <Image src={TechImg5} alt="Immagine Know How 1" />
     </div>
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">

@@ -8,7 +8,7 @@ import { useState } from 'react';
 import Title from '../ui/components/title';
 import Image from 'next/image';
 import TechImg1 from './../../img/sostenibility/image.XUX8M2.png'
-import TechImg5 from './../../img/technology/image.QCILN2.png'
+import TechImg5 from './../../img/sustainability/images.jpeg'
 import EndPage from '../ui/components/end-page';
 
 export default function Page() {

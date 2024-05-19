@@ -91,7 +91,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
               <Link href="/technology" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Tecnologia</Link>
               
              
-              <Link href="/sostenibility" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sostenibilità</Link>
+              <Link href="/sustainability" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sostenibilità</Link>
             
 
               <div className="relative" onMouseEnter={toggleMenuContact} onMouseLeave={toggleMenuContact}>
@@ -133,7 +133,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
               <Link href="/know-how" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Know-How</Link>
               <Link href="/products" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">I nostri prodotti</Link>
               <Link href="/technology" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Tecnologia</Link>
-              <Link href="/sostenibility" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
+              <Link href="/sustainability" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
               <Link href="/contact" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Dove siamo</Link>
               <Link href="/job-opportunity" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Job Opportunity</Link>
           </div>

@@ -1,11 +1,23 @@
-import Button from "../ui/components/button";
+"use client"
 import Description from "../ui/components/description";
 import Title from "../ui/components/title";
 import Image from "next/image";
-import know1 from "../../img/know-how/know-how-1-300x225.jpg";
 import EndPage from "../ui/components/end-page";
-import TechImg3 from './../../img/technology/image.G6J5M2.png'
-import TechImg5 from './../../img/technology/image.QCILN2.png'
+import { Swiper, SwiperSlide } from "swiper/react";
+import know1 from "../../img/know-how/FP Aspark.jpg";
+import know2 from "../../img/know-how/Mostrina e Q8.jpeg";
+import know3 from "../../img/know-how/Panda.jpeg";
+import know4 from "../../img/know-how/Picture 7.jpg";
+import know5 from "../../img/know-how/Q8.jpeg";
+import know6 from "../../img/know-how/Tyco 2.jpeg";
+import know7 from "../../img/know-how/know-how-1-300x225.jpg";
+import know8 from "../../img/know-how/montaggio 1.jpeg";
+import know9 from "../../img/know-how/montaggio fa24.jpeg";
+
+import { Navigation } from "swiper/modules";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+import "swiper/css";
 
 export default function Page() {
     return (
@@ -15,7 +27,23 @@ export default function Page() {
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={know1} alt="Immagine Know How 3" width={500} height={300}/>
+                <Swiper
+                        spaceBetween={20}
+                        modules={[Navigation]}
+                      
+                        slidesPerView={1} // Numero di slide visibili contemporaneamente
+                        centeredSlides={true} // Centra le slide attive
+                        navigation={true} // Abilita la navigazione
+                       
+                        >
+                            <SwiperSlide>
+                                <Image src={know4} alt="techImage" ></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image src={know1} alt="techImage" ></Image>
+                            </SwiperSlide>
+                            
+                        </Swiper>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Progettazione</h4>
@@ -26,7 +54,29 @@ export default function Page() {
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={know1} alt="Immagine Know How 3" width={500} height={300}/>
+                <Swiper
+                        spaceBetween={20}
+                        modules={[Navigation]}
+                      
+                        slidesPerView={1} // Numero di slide visibili contemporaneamente
+                        centeredSlides={true} // Centra le slide attive
+                        navigation={true} // Abilita la navigazione
+                       
+                        >
+
+                        <SwiperSlide>
+                                <Image src={know2} alt="techImage"></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image src={know3} alt="techImage"></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image src={know5} alt="techImage"></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image src={know6} alt="techImage"></Image>
+                            </SwiperSlide>
+                        </Swiper>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Stampaggio</h4>
@@ -37,7 +87,23 @@ export default function Page() {
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-                <Image src={know1} alt="Immagine Know How 3" width={500} height={300}/>
+                <Swiper
+                        spaceBetween={20}
+                        modules={[Navigation]}
+                      
+                        slidesPerView={1} // Numero di slide visibili contemporaneamente
+                        centeredSlides={true} // Centra le slide attive
+                        navigation={true} // Abilita la navigazione
+                       
+                        >
+
+                            <SwiperSlide>
+                                <Image src={know8} alt="techImage"></Image>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image src={know9} alt="techImage"></Image>
+                            </SwiperSlide>
+                        </Swiper>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Montaggio</h4>
