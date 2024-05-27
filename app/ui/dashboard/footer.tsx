@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="col-span-1">
               <h2 className="text-lg font-semibold mb-4">Sirion</h2>
               <div className="space-y-2">
-                <p>Progettazione, produzione stampi e stampaggio materie plastiche.</p>
+                <p>Progettazione, stampaggio e assemblaggio di componenti Lighting per il settore Automotive</p>
               </div>
             </div>
             <div className="col-span-1">
@@ -27,6 +27,12 @@ const Footer = () => {
                   <ArrowRightIcon size='15px'></ArrowRightIcon>
                   <Link href="/contact" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Contatti</Link>
                 </li>
+                <li className="flex items-center">
+                  <ArrowRightIcon size='15px'></ArrowRightIcon>
+                  <Link href="/whistleblowing" className="hover:text-customWhite" style={{marginLeft: '3px'}}>Whistleblowing</Link>
+                </li>
+
+                
               </ul>
             </div>
             <div className="col-span-1">
@@ -50,8 +56,10 @@ const Footer = () => {
               <h2 className="text-lg font-semibold mb-4">Contatti</h2>
                 <p className="space-y-2">
                   <strong>Indirizzo</strong><br></br>
-                  Via Provinciale 35, 10010 Loranzè (Torino) Italia<br></br>
-                  <strong>Telefono:</strong> (+39) 0125 538091
+                  Strada Cascina Cauda 5 14100 Asti (AT)<br></br>
+                  <strong>Telefono:</strong> (+39) 0141445625 <br></br>
+                  <strong>Telefono:</strong> (+39) 0141445511 <br></br>
+                  <strong>Email:</strong> info@sirionsrl.com
                 </p>
             </div>
           </div>
@@ -59,14 +67,13 @@ const Footer = () => {
         <div className="container mx-auto flex justify-between py-7">
           <div>
             <div>
-              <p>Sirion Srl - P.iva / C.F. 06408910013 - <a data-href="#moove_gdpr_cookie_modal" aria-label="Imposta cookies">Imposta cookies</a> - Credits <br></br><a href="https://www.dexanet.com" target="_blank">Dexa - Ittrio</a></p>
+              <p>Sirion Srl - P.iva / C.F. 01731880058 </p>
             </div>
           </div>
           <div>
             <div>
               <ul className="container mx-auto flex">
                 <li ><Link target="_blank" className="mr-4" href="https://www.deltats.eu/wp-content/uploads/2023/01/Privacy-DELTATS.pdf">Privacy</Link></li>
-                <li ><Link href="https://www.deltats.eu/cookies/">Cookies</Link></li>
               </ul>
             </div>
           </div>

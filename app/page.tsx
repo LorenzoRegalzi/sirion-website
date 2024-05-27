@@ -5,8 +5,11 @@ import news1 from "../img/news/news_1.png";
 import news2 from "../img/news/news_2.png";
 import news3 from "../img/news/news_3.png";
 import Head from "next/head";
-import TechImg5 from '../img/products/E84 BMW.jpeg';
-import TechImg1 from '../img/product/Tyco 1.jpeg';
+
+
+import pB2 from "../img/products/bottom/E84 BMW.jpeg"
+import pB4 from "../img/products/bottom/Tyco 2.jpeg"
+
 import Button from "./ui/components/button";
 import EndPage from "./ui/components/end-page";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,8 +27,8 @@ export default function Home() {
     const [count4, setCount4] = useState(0);
     const finalCount1 = 18000;
     const finalCount2 = 36000;
-    const finalCount3 = 80;
-    const finalCount4 = 800;
+    const finalCount3 = 95;
+    const finalCount4 = 1250;
     const duration = 3000; // Durata in millisecondi
   
     useEffect(() => {
@@ -64,7 +67,7 @@ export default function Home() {
         <title>Sirion Srl - Home</title>
         <meta name="description" content="Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo." />
     </Head>
-    <Title title={"Sirion Srl - Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
+    <Title title={"Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10  justify-items-start">
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
@@ -107,7 +110,7 @@ export default function Home() {
 
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
         <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
-            <Image src={TechImg1} alt="Immagine Know How 1"  />
+            <Image src={pB2} alt="Immagine Know How 1"  />
         </div>
         <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
             <h4 className="mb-4 text-customBlack text-3xl font-medium">Know How</h4>
@@ -117,7 +120,7 @@ export default function Home() {
     </div>
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last flex items-center justify-center">
-        <Image src={TechImg5} alt="Immagine Know How 1" />
+        <Image src={pB4} alt="Immagine Know How 1" />
     </div>
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
         <h4 className="mb-4 text-customBlack text-3xl font-medium">Prodotti</h4>
@@ -125,45 +128,6 @@ export default function Home() {
         <Button text={"Scopri"}></Button>
     </div>
     </div>
-
-
-    {/* <div className="md:flex bg-customWhite">
-        <div className="w-full md:w-1/3 p-20 bg-customDarkGrey2">
-            <h1 className="text-customBlack text-5xl text-left font-extrabold">Storia</h1>
-            <p className="text-customBlack text-left mt-4">Sirion Srl, fondata il 01/09/2023 dopo l’acquisizione tramite il bando del MISE dell’ex Blutec, è oggi un attore chiave nel settore automobilistico. Specializzata nella progettazione, stampaggio e assemblaggio di materie plastiche per il mercato dell’Automotive, con particolare attenzione al settore Lighting (interni ed esterni), Sirion Srl rappresenta una realtà produttiva strategica per i principali player del settore. La società è interamente di proprietà della capogruppo DeltAts Srl, con sede a Loranzè (TO).</p>
-        </div>
-        <div className="relative w-full md:w-1/3">
-            <Image src={know1} alt="Immagine Valvole di Sicurezza" layout="fill" objectFit="cover"/>
-        </div>
-        <div className="w-full md:w-1/3 p-20 bg-customDarkGrey2">
-            <h1 className="text-customBlack text-5xl text-left font-extrabold">Missione</h1>
-            <p className="text-customBlack text-left mt-4">Sirion si impegna per il successo economico attraverso il miglioramento continuo dei processi e l’utilizzo efficiente delle risorse interne, con il cliente al centro di ogni attività. Con un’attenzione particolare alla soddisfazione del cliente e dei dipendenti, Sirion promuove un ambiente di lavoro sano e rispettoso basato sulla fiducia e sull’innovazione. La qualità, la competitività dei costi e la sostenibilità ambientale guidano il nostro successo, con un’impegno costante per la sicurezza sul posto di lavoro.</p>
-        </div>
-    </div> */}
-
-    {/* <div className="md:flex bg-customWhite p-20">
-        <div className="w-full md:w-1/3 bg-customWhite">
-            <h1 className="text-customBlack text-3xl text-left font-medium">Recensioni dei media: cosa dicono di noi i giornali sulla nostra storia e il nostro impegno</h1>
-        </div>
-        <div className="w-full md:w-1/3 bg-customWhite">
-            <div className="flex">
-                <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">01</h1>
-                <div className="flex flex-col">
-                    <h1 className="text-customBlack text-xl text-left font-medium">Stampa</h1>
-                    <Image src={news1} alt="News 1" width={500} height={300} className="p-10" />
-                </div>
-            </div>
-        </div>
-        <div className="w-full md:w-1/3 bg-customWhite">
-            <div className="flex">
-                <h1 className="text-textGrey text-5xl text-left font-extrabold mr-4">02</h1>
-                <div className="flex flex-col">
-                    <h1 className="text-customBlack text-xl text-left font-medium">Piccolo</h1>
-                    <Image src={news2} alt="News 2" width={500} height={300} className="p-10" />
-                </div>
-            </div>
-        </div>
-    </div> */}
    
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
   <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-last bg-customDarkGrey2 p-3 ">

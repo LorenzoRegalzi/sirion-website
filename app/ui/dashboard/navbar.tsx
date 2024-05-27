@@ -94,19 +94,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
               <Link href="/sustainability" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Sostenibilità</Link>
             
 
-              <div className="relative" onMouseEnter={toggleMenuContact} onMouseLeave={toggleMenuContact}>
-                <button className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex items-center">
-                
-                  Contatti
-                  <ArrowDownIcon />
-                </button>
-                {isOpenContact && (
-                  <div className="bg-customWhite absolute z-10 left-0 w-40 bg-white divide-y divide-gray-100 shadow-lg">
-                    <Link href="/contact" className="text-customBlack block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dove siamo</Link>
-                    <Link href="/job-opportunity" className="text-customBlack block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Job Opportunity</Link>
-                  </div>
-                )}
-              </div>
+              <Link href="/contact" className="text-customBlack  hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Contatti</Link>
             </div>
           </div>
           <div className="md:hidden flex items-center">
@@ -134,8 +122,7 @@ const navbarClass = scrollY > 0 ? 'bg-customBlueRgb' : '';
               <Link href="/products" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">I nostri prodotti</Link>
               <Link href="/technology" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Tecnologia</Link>
               <Link href="/sustainability" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Sostenibilità</Link>
-              <Link href="/contact" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Dove siamo</Link>
-              <Link href="/job-opportunity" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Job Opportunity</Link>
+              <Link href="/contact" className="text-customWhite hover:text-gray-300 px-3 py-2 rounded-md text-xl font-medium">Contatti</Link>
           </div>
       </div>
     }

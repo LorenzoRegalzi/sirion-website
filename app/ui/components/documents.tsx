@@ -26,13 +26,18 @@ const Documents = (props: any) => {
           {/* Contenitore del testo */}
           <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center">
             <div className="text-center md:text-left">
-                <Link href={'/IATF-16949-2016.pdf'}>
+                <Link target="_blank" href={'/IATF Sirion.pdf'}>
                     <p className="text-customWhite mb-4 text-2xl">&#8226; IATF</p>
                 </Link>
-                <Link href={'/ISO-9001-2015-IT.pdf'}>
+                <Link target="_blank" href={'/Sirion S.r.l._ISO 9001 2015_cambio ragione sociale.pdf'}>
                     <p className="text-customWhite mb-4 text-2xl">&#8226; ISO9001</p>
                 </Link>
-                
+                <Link target="_blank" href={'/Codice Etico Sirion.pdf'}>
+                    <p className="text-customWhite mb-4 text-2xl">&#8226; Codice Etico</p>
+                </Link>
+                <Link target="_blank" href={'/CALCOLO DELL’ IMPRONTA DI CARBONIO CFPDI ORGANIZZAZIONE Sirion Srl.pdf'}>
+                  <p className="text-customWhite mb-4 text-2xl">&#8226; Impronta C02</p>
+                </Link>
             </div>
             {/* Bottone */}
             <div className="mt-4 md:mt-0 md:ml-4">
