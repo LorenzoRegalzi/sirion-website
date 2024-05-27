@@ -39,7 +39,7 @@ export default function Page() {
                     <div className="bg-customBlueRgb p-6" style={{height:'450px'}}>
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Alluminatura</h4>
                         <p className="text-customWhite text-sm text-left pb-5">Il nostro parco macchine include 1 alluminatrice Arzuffi con diametro di 1800 e altezza di 1600, 1 alluminatrice Galileo con diametro di 1340 e altezza di 950, e 1 alluminatrice Galileo con diametro di 1100 e altezza di 950. Queste macchine ci consentono di lavorare con precisione e efficienza su una vasta gamma di componenti, garantendo risultati di qualità superiore.
-Siamo impegnati a fornire soluzioni personalizzate e di alta qualità ai nostri clienti nel settore automotive, e il nostro reparto di alluminatura è una parte fondamentale del nostro impegno per l'eccellenza. Scoprite come possiamo trasformare le vostre idee in realtà, offrendo componenti in alluminio di prima classe per le vostre applicazioni di illuminazione automobilistica</p>
+Siamo impegnati a fornire soluzioni personalizzate e di alta qualità ai nostri clienti nel settore automotive, e il nostro reparto di alluminatura è una parte fondamentale del nostro impegno per l’eccellenza. Scoprite come possiamo trasformare le vostre idee in realtà, offrendo componenti in alluminio di prima classe per le vostre applicazioni di illuminazione automobilistica</p>
 
 
                         
@@ -78,7 +78,7 @@ Siamo impegnati a fornire soluzioni personalizzate e di alta qualità ai nostri 
                         <h4 className="mb-2 text-customWhite text-3xl font-medium">Laboratorio</h4>
                         <p className="mb-2 text-customWhite">
                         
-Sirion presenta il suo nuovo laboratorio, recentemente ristrutturato e dotato di tecnologie all'avanguardia per garantire precisione e affidabilità nei test e nelle analisi dei prodotti. Tra le sue caratteristiche principali, spiccano una camera fotometrica, un banco di prova corrosione, un banco di resistenza alla pioggia e alla polvere, una cella umido statica, un banco vibrante e una cella climatica. Il nostro impegno per la qualità si riflette nel rigoroso processo di test, che assicura la massima performance e durata dei componenti nel tempo. Scopri di più sulle nostre capacità di test e analisi e su come possiamo contribuire al successo dei tuoi progetti nel settore automobilistico.</p>
+Sirion presenta il suo nuovo laboratorio, recentemente ristrutturato e dotato di tecnologie all’avanguardia per garantire precisione e affidabilità nei test e nelle analisi dei prodotti. Tra le sue caratteristiche principali, spiccano una camera fotometrica, un banco di prova corrosione, un banco di resistenza alla pioggia e alla polvere, una cella umido statica, un banco vibrante e una cella climatica. Il nostro impegno per la qualità si riflette nel rigoroso processo di test, che assicura la massima performance e durata dei componenti nel tempo. Scopri di più sulle nostre capacità di test e analisi e su come possiamo contribuire al successo dei tuoi progetti nel settore automobilistico.</p>
                     </div>
                 </div>
             </div>
