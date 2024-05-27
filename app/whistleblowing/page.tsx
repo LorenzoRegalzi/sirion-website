@@ -10,7 +10,7 @@ export default function Page() {
     return (
         <>
             <Title title={'Whistleblowing'} />
-            <div className="bg-customWhite pl-44 pr-44 pt-10 pb-10">
+            <div className="bg-customWhite p-10 md:p-20">
                
                 
                     <p className="text-customBlack font-extrabold mb-4">Sistemi di segnalazione delle violazioni whistleblowing</p>
