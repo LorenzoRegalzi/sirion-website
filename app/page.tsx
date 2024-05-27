@@ -18,6 +18,7 @@ import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import "swiper/css";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -115,7 +116,9 @@ export default function Home() {
         <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
             <h4 className="mb-4 text-customBlack text-3xl font-medium">Know How</h4>
             <p className="mb-4 text-customBlack">Scopri il know-how decennale di Sirion nel settore dell’illuminazione per il mercato automotive. La nostra flessibilità e esperienza ci rendono un partner affidabile per i produttori di componenti auto italiani ed esteri.</p>
-            <Button text={"Scopri"}></Button>
+            <Link href="/know-how"> 
+                <Button text={"Scopri"}></Button>
+            </Link>
         </div>
     </div>
     <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
@@ -125,7 +128,9 @@ export default function Home() {
     <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
         <h4 className="mb-4 text-customBlack text-3xl font-medium">Prodotti</h4>
         <p className="mb-4 text-customBlack">Grazie alla nostra tecnologia e flessibilità, siamo in grado di soddisfare ogni esigenza dei nostri clienti e produrre svariati prodotti per il settore Lighting del mercato automotive, come: fanali anteriori, posteriori, indicatori di direzione, fendinebbia, luci di ingombro, ambient light, blind spot, terzi stop e catadiottri.</p>
-        <Button text={"Scopri"}></Button>
+        <Link href="/products"> 
+                <Button text={"Scopri"}></Button>
+            </Link>
     </div>
     </div>
    
