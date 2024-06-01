@@ -3,7 +3,7 @@ import { MutableRefObject, useRef } from "react";
 import Button from "../ui/components/button";
 import Title from "../ui/components/title";
 import Image from "next/image";
-import imageUrl from "../../img/contact/map.png"
+import imageUrl from "../../img/default/map3.png"
 import Link from "next/link";
 
 
@@ -59,7 +59,9 @@ export default function Page() {
                     <h3 className="text-customBlack font-extrabold text-center text-3xl mb-4">Richiesta informazioni</h3>
                     <p className="text-customBlack text-center mb-4">Per ricevere ulteriori informazioni contattaci sulla nostra pagina <Link target="_blank" style={{textDecoration:'underline', color:'#004F92'}} href={'https://www.linkedin.com/company/sirion-srl/'}> LinkedIn</Link></p>
                     <p className="text-customBlack font-extrabold">Indirizzo</p>
+                    <Link target="_blank" style={{textDecoration:'underline', color:'#004F92'}} href={'https://maps.google.de/?q=Strada+Cascina+Cauda+5%2C+14100+Asti'}> 
                     <p className="text-customBlack">Strada Cascina Cauda 5 14100 Asti (AT)</p>
+                    </Link>
                     <hr className="my-6 border-gray-200" />
                     <p className="text-customBlack font-extrabold">Recapiti</p>
                     <p className="text-customBlack">Tel. (+39) 0141445625</p>

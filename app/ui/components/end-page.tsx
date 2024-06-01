@@ -1,5 +1,5 @@
 import React from "react";
-import imageUrl from "./../../../img/default/bg-qualita.jpg"
+import imageUrl from "./../../../img/default/BMW-LB.webp"
 import Image from "next/image";
 import Button from "./button";
 import Link from "next/link";

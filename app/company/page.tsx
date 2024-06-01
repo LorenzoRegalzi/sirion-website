@@ -2,7 +2,7 @@
 import Title from "../ui/components/title";
 import Image from "next/image";
 import company1 from "../../img/company/logo sirion.jpg";
-import company2 from "../../img/company/facciata new.jpeg";
+import company2 from "../../img/default/title-banner.jpg";
 import Documents from "../ui/components/documents";
 
 export default function Page() {

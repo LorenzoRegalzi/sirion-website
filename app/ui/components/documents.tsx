@@ -1,11 +1,11 @@
 import React from "react";
-import imageUrl from "./../../../img/default/bg-qualita.jpg"
+import imageUrl from "./../../../img/document/BMW-TOTAL (1).webp"
 import Image from "next/image";
 import Link from "next/link";
 
 const Documents = (props: any) => {
     return (
-      <div className="relative w-full h-[20rem] flex items-center justify-center">
+      <div className="relative w-full h-[30rem] flex items-center justify-center">
         {/* Immagine */}
         <Image
           src={imageUrl}

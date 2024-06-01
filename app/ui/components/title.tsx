@@ -1,5 +1,5 @@
 import React from "react";
-import imageUrl from "./../../../img/default/sirion_srl_cover.jpeg"
+import imageUrl from "./../../../img/default/title-banner.jpg"
 import Image from "next/image";
 const Title = (props: any) => {
   return (
