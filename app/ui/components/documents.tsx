@@ -1,5 +1,5 @@
 import React from "react";
-import imageUrl from "./../../../img/document/BMW-TOTAL (1).webp"
+import imageUrl from "./../../../img/document/photo_2023-08-20_11-52-50.jpg"
 import Image from "next/image";
 import Link from "next/link";
 
