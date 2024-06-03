@@ -14,7 +14,7 @@ const Title = (props: any) => {
     />
     
     {/* Overlay scuro */}
-    <div className="absolute inset-0 bg-black opacity-50 bg-customBlack"></div>
+    <div className="absolute inset-0 bg-black opacity-70 bg-customBlack"></div>
     
     <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center w-[70rem]">
@@ -22,6 +22,11 @@ const Title = (props: any) => {
             {props.description &&
               <div className="w-100 flex-col flex items-center p-10">
                 <p className="text-customWhite font-bold justify-center text-center  sm:text-lg md:text-xl lg:text-2xl">{props.description}</p>
+                {props.description2 &&
+                 
+                    <p className="text-customWhite font-bold justify-center text-center  sm:text-lg md:text-xl lg:text-2xl">{props.description2}</p>
+                
+                }
               </div>
             }
         </div>

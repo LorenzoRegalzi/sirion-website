@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import Button from "./button";
 
 const Description = (props: any) => {
 
@@ -8,6 +10,10 @@ const Description = (props: any) => {
         <p className="text-customBlack justify-center text-center text-xl">{props.text}</p> 
         {props.text2 && <p className="text-customBlack justify-center text-center text-xl">{props.text2}</p>}
         {props.text3 && <p className="text-customBlack justify-center text-center text-xl">{props.text3}</p>}
+        {props.button && <Link className=" mt-5" href="/contact" >
+                    <Button text="CONTATTACI" />
+                </Link>}
+        
     </div>
   );
 };

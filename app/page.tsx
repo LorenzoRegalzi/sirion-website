@@ -68,7 +68,7 @@ export default function Home() {
         <title>Sirion Srl - Home</title>
         <meta name="description" content="Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo." />
     </Head>
-    <Title title={"Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
+    <Title title={"Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione."} description2={" Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10  justify-items-start">
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">

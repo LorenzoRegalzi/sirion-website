@@ -46,7 +46,7 @@ export default function Page() {
             <Title title={'Sostenibilità'} />
             <Description 
                 text={"In SIRION SRL siamo impegnati non solo a fornire prodotti di alta qualità, ma anche a farlo in modo sostenibile e responsabile nei confronti dell'ambiente. Riconosciamo l'importanza di ridurre l'impatto ambientale delle nostre operazioni e stiamo adottando misure concrete per raggiungere questo obiettivo. Abbiamo avviato un processo di calcolo delle emissioni di CO2 generate dalle nostre attività e ci impegniamo a compensarle attraverso certificazioni carbon footprint, garantendo così un'impronta ecologica sempre più ridotta."} 
-                text2={"Inoltre, siamo entusiasti di annunciare che nel corso dell'anno installeremo la prima fase di un ampio progetto dedicato all'energia rinnovabile. Questo progetto prevede l'installazione di pannelli solari per la produzione di energia pulita e sostenibile, riducendo ulteriormente il nostro impatto ambientale e contribuendo alla transizione verso un futuro più verde e sostenibile."}
+                text2={"Inoltre, siamo entusiasti di annunciare che nel corso dell'anno installeremo la prima fase di un ampio progetto dedicato all'energia rinnovabile. Questo progetto prevede l'installazione di pannelli fotovoltaici per la produzione di energia pulita e sostenibile, riducendo ulteriormente il nostro impatto ambientale e contribuendo alla transizione verso un futuro più verde e sostenibile."}
                 text3={"Continuate a seguire i nostri progressi nella nostra missione per un ambiente più pulito e sostenibile. Insieme, possiamo fare la differenza."}
             />
 
@@ -68,7 +68,7 @@ export default function Page() {
                     <Image src={TechImg1} alt='techImage' width={500} height={300}></Image>
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 md:order-first">
-                    <h4 className="mb-4 text-customBlack text-3xl font-medium">Pannelli Solari</h4>
+                    <h4 className="mb-4 text-customBlack text-3xl font-medium">Pannelli Fotovoltaici</h4>
                     <p className="mb-4 text-customBlack">L’obiettivo di Sirion srl è quello di crescere anche dal punto dell’ecosostenibilità, a tal punto Sirion è già al lavoro con un progetto pluriennale che permetterà entro la fine del 2026 di autoprodurre energia dai pannelli fotovoltaici per coprire fino al 75% del fabbisogno, questo mediante anche impianti elettrici di ultima generazione</p>
                 </div>
             </div>

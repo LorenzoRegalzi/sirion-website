@@ -21,11 +21,13 @@ import pB1 from "../../img/products/bottom/3STOP 2021.jpeg"
 import pB2 from "../../img/products/bottom/E84 BMW.jpeg"
 import pB3 from "../../img/products/bottom/Tyco 1.jpeg"
 import pB4 from "../../img/products/bottom/Tyco 2.jpeg"
+import Link from "next/link";
+import Button from "../ui/components/button";
 
 
 export default function Page() {
     return (
-        <>
+        <div style={{backgroundColor:'white', paddingBottom:'100px'}}>
             <Title title={'Prodotti'} />
             <Description 
                 text={"Da SIRION SRL  siamo fieri di presentare una vasta gamma di componenti in plastica di alta qualità progettati appositamente per il settore automobilistico commerciale."} 
@@ -102,7 +104,9 @@ export default function Page() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <Description text={"Scoprite come i nostri prodotti possono migliorare le prestazioni e l'aspetto dei vostri veicoli commerciali. Siamo qui per offrire soluzioni affidabili e di qualità che contribuiscano al successo della vostra attività"} />
+            <Description button={true} text={"Scoprite come i nostri prodotti possono migliorare le prestazioni e l'aspetto dei vostri veicoli commerciali. Siamo qui per offrire soluzioni affidabili e di qualità che contribuiscano al successo della vostra attività"} />
+           
+            
             <Swiper
             spaceBetween={20}
             modules={[Navigation]}
@@ -134,6 +138,6 @@ export default function Page() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
       );
 }

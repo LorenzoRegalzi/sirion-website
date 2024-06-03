@@ -24,7 +24,7 @@ export default function Page() {
     return (
         <>
           <Title title={"Know How"}  description={"Scopri il know-how decennale di Sirion nel settore dell’illuminazione per il mercato automotive. La nostra flessibilità e esperienza ci rendono un partner affidabile per i produttori di componenti auto italiani ed esteri."} />
-          <Description text={"Sono le competenze e la dedizione del nostro team che ci consentono di eccellere nel settore automobilistico, offrendo montaggi di alta qualità per componenti in plastica destinati ai veicoli commerciali."}></Description>
+          <Description text={"Sono le competenze e la dedizione del nostro team che ci consentono di eccellere nel settore automobilistico, offrendo un prodotto di alta qualità rispettando tutte le richieste dei nostri clienti"}></Description>
 
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200 flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Progettazione</h4>
-                    <p className="mb-4 text-customBlack">Da SIRION SRL ci impegniamo a soddisfare al meglio le esigenze dei nostri clienti offrendo soluzioni su misura per componenti in plastica, compresi fanali posteriori e anteriori, nonché illuminazione esterna ed interna per veicoli commerciali e non solo; La nostra missione è trasformare le vostre idee in realtà, dalla fase di concezione all’implementazione del progetto finale. Grazie alla nostra vasta esperienza nel settore e alle tecnologie all’avanguardia a nostra disposizione, siamo in grado di guidarvi attraverso ogni passo del processo di progettazione, garantendo risultati che superano le vostre aspettative</p>
+                    <p className="mb-4 text-customBlack">Da SIRION SRL ci impegniamo a soddisfare al meglio le esigenze dei nostri clienti offrendo soluzioni su misura per componenti in plastica, compresi fanali posteriori e anteriori, nonché illuminazione esterna ed interna per veicoli commerciali e non solo; <br></br>La nostra missione è trasformare le vostre idee in realtà, dalla fase di concezione all’implementazione del progetto finale. <br></br>Grazie alla nostra vasta esperienza nel settore e alle tecnologie all’avanguardia a nostra disposizione, siamo in grado di guidarvi attraverso ogni passo del processo di progettazione, garantendo risultati che superano le vostre aspettative</p>
                     
                 </div>
             </div>
@@ -80,9 +80,6 @@ export default function Page() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <Image src={know3} alt="techImage"></Image>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src={know5} alt="techImage"></Image>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <Image src={know6} alt="techImage"></Image>
@@ -114,7 +111,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Montaggio</h4>
-                    <p className="mb-4 text-customBlack">Crediamo fermamente nelle nostre risorse umane e siamo orgogliosi di presentare il nostro team di oltre 90 dipendenti altamente qualificati.Ogni membro del nostro team contribuisce con la propria esperienza e passione per garantire risultati che soddisfano le esigenze specifiche dei nostri clienti.Presso le nostre strutture, adottiamo metodologie di lavoro efficienti e processi ottimizzati per garantire un montaggio preciso e affidabile. Siamo impegnati a superare le aspettative dei nostri clienti, fornendo soluzioni di montaggio su misura che riflettono la nostra dedizione all’eccellenza.Siamo pronti a collaborare con voi per trasformare le vostre idee in realtà</p>
+                    <p className="mb-4 text-customBlack">Crediamo fermamente nelle nostre risorse umane e siamo orgogliosi di presentare il nostro team di oltre 90 dipendenti altamente qualificati.<br></br>Ogni membro del nostro team contribuisce con la propria esperienza e passione per garantire risultati che soddisfano le esigenze specifiche dei nostri clienti.<br></br>Presso le nostre strutture, adottiamo metodologie di lavoro efficienti e processi ottimizzati per garantire un montaggio preciso e affidabile. <br></br>Siamo impegnati a superare le aspettative dei nostri clienti, fornendo soluzioni di montaggio su misura che riflettono la nostra dedizione all’eccellenza.<br></br>Siamo pronti a collaborare con voi per trasformare le vostre idee in realtà</p>
                     
                 </div>
             </div>
