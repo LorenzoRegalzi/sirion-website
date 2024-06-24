@@ -73,7 +73,7 @@ const Footer = () => {
           <div>
             <div>
               <ul className="container mx-auto flex">
-                <li ><Link target="_blank" className="mr-4" href="https://www.deltats.eu/wp-content/uploads/2023/01/Privacy-DELTATS.pdf">Privacy</Link></li>
+                <li ><Link target="_blank" className="mr-4" href={'Sirion-informativa-privacy.pdf'}>Privacy</Link></li>
               </ul>
             </div>
           </div>

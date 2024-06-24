@@ -4,6 +4,7 @@ import Image from "next/image";
 import company1 from "../../img/company/logo sirion.jpg";
 import company2 from "../../img/default/title-banner.jpg";
 import Documents from "../ui/components/documents";
+import Link from "next/link";
 
 export default function Page() {
 
@@ -19,7 +20,7 @@ export default function Page() {
                 </div>
                 <div className="w-full md:w-1/2 max-w-md md:max-w-800 mx-4 my-2 bg-gray-200">
                     <h4 className="mb-4 text-customBlack text-3xl font-medium">Storia</h4>
-                    <p className="mb-4 text-customBlack">Sirion srl , nata l’ 01/09/2023 dopo l’acquisizione al bando del MISE dell’ormai Ex Blutec, è ora una realtà produttiva strategica per i maggiori player del settore Automotive.<br></br>Il Core Business si concentra sulla progettazione, stampaggio e assemblaggio di materie plastiche per il mercato dell’Automotive, nello specifico il settore Lighting (interior ed exterior).<br></br>Sirion srl  è detenuta al 100% dalla capogruppo DeltAts srl con sede a Loranzè (TO) che da più di 10 anni opera nel settore dello stampaggio per il mercato automotive.</p>
+                    <p className="mb-4 text-customBlack">Sirion srl , nata l’ 01/09/2023 dopo l’acquisizione al bando del MISE dell’ormai Ex Blutec, è ora una realtà produttiva strategica per i maggiori player del settore Automotive.<br></br>Il Core Business si concentra sulla progettazione, stampaggio e assemblaggio di materie plastiche per il mercato dell’Automotive, nello specifico il settore Lighting (interior ed exterior).<br></br>Sirion srl è detenuta al 100% dalla capogruppo <Link target="_blank" href="https://www.deltats.eu">DeltAts srl</Link> con sede a Loranzè (TO) che da più di 10 anni opera nel settore dello stampaggio per il mercato automotive.</p>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center p-10 bg-customWhite">

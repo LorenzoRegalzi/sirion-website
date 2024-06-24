@@ -35,7 +35,7 @@ const Documents = (props: any) => {
                 <Link target="_blank" href={'/Codice Etico Sirion.pdf'}>
                     <p className="text-customWhite mb-4 text-2xl">&#8226; Codice Etico</p>
                 </Link>
-                <Link target="_blank" href={'/CALCOLO DELL’ IMPRONTA DI CARBONIO CFPDI ORGANIZZAZIONE Sirion Srl.pdf'}>
+                <Link target="_blank" href={'/CALCOLO_DELL’_IMPRONTA_DI_CARBONIO_CFPDI_ORGANIZZAZIONE_Sirion_Srl.pdf'}>
                   <p className="text-customWhite mb-4 text-2xl">&#8226; Impronta C02</p>
                 </Link>
             </div>

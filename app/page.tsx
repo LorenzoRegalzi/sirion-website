@@ -19,6 +19,7 @@ import 'swiper/css/navigation';
 import "swiper/css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import TitleHome from "./ui/components/title-home";
 
 export default function Home() {
 
@@ -29,7 +30,7 @@ export default function Home() {
     const finalCount1 = 18000;
     const finalCount2 = 36000;
     const finalCount3 = 95;
-    const finalCount4 = 1250;
+    const finalCount4 = 1300;
     const duration = 3000; // Durata in millisecondi
   
     useEffect(() => {
@@ -68,7 +69,7 @@ export default function Home() {
         <title>Sirion Srl - Home</title>
         <meta name="description" content="Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione. Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo." />
     </Head>
-    <Title title={"Home"} description={"Sirion Srl è un’azienda leader nel settore dell’illuminazione per il mercato automobilistico, specializzata nello stampaggio plastico ad iniezione."} description2={" Offriamo un servizio completo, dalla progettazione alla realizzazione del componente finale, garantendo qualità e affidabilità in ogni fase del processo."}/>
+    <TitleHome description={"Qualità in"} description2={"ogni luce"} description3={"Grazie alla nostra esperienza offriamo un'esperienza a 360° dallo stampaggio di materie plastice alla finitura di componenti Lighting per il mercato Automotive."}/>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center bg-customWhite p-10  justify-items-start">
     <div className="max-w-xs bg-customWhite p-4 items-start w-100">
         <div className="flex">
